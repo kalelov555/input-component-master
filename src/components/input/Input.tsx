@@ -3,30 +3,23 @@ import PropTypes from "prop-types";
 import "./Input.scss";
 import styled from "styled-components";
 
-const Input = styled.input`
-    backgroundColor: red
-`
 
-export default function X() {
-    return <Input />
-}
-
-// export default function Input(props) {
+export default function Input(props) {
     
-//     return (
-//         <div>
-//             <label>{props.label}</label>
+    return (
+        <div>
+            <label>{props.label}</label>
 
-//             <input 
-//             className="input" 
-//             placeholder={props.value}
-//             style={{backgroundColor: }}
-//             >
-//             </input>
+            <input 
+            className="input" 
+            placeholder={props.value}
+            >
+            </input>
+            <p>{props.helperText}</p>
 
-//         </div>
-//     )
-// }
+        </div>
+    )
+}
 
 
 Input.propTypes = {
