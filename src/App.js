@@ -1,11 +1,10 @@
-import logo from './logo.svg';
 import './App.css';
-import Navbar from './components/Navbar';
+import Container from "./components/inputs-container/Container.tsx";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Container />
     </div>
   );
 }
